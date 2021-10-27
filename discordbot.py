@@ -2,7 +2,7 @@ from discord.ext import commands
 from os import getenv
 import traceback
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='/')
 
 
 @bot.event
@@ -13,7 +13,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def ping(ctx):
+async def fuck(ctx):
     await ctx.send('nmsl')
 
 
