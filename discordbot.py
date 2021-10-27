@@ -16,6 +16,10 @@ async def on_command_error(ctx, error):
 async def nmsl(ctx):
     await ctx.send('nmsl')
 
+@bot.command()
+async def czc(ctx):
+    await ctx.send('城中城')
+
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
