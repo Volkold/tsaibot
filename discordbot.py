@@ -2,7 +2,7 @@ from discord.ext import commands
 from os import getenv
 import traceback
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='nmsl')
 
 
 @bot.event
@@ -14,7 +14,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send('nmsl')
 
 
 token = getenv('DISCORD_BOT_TOKEN')
