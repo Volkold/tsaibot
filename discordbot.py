@@ -2,7 +2,7 @@ from discord.ext import commands
 from os import getenv
 import traceback
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='n')
 
 
 @bot.event
@@ -13,12 +13,12 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def nmsl(ctx):
+async def msl(ctx):
     await ctx.send('nmsl')
 
 @bot.command()
-async def czc(ctx):
-    await ctx.send('城中城')
+async def mczcl(ctx):
+    await ctx.send('你媽城中城了')
 
 
 token = getenv('DISCORD_BOT_TOKEN')
