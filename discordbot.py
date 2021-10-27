@@ -2,7 +2,7 @@ from discord.ext import commands
 from os import getenv
 import traceback
 
-bot = commands.Bot(command_prefix='n')
+bot = commands.Bot(command_prefix='!')
 
 
 @bot.event
@@ -13,7 +13,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def msl(ctx):
+async def nmsl(ctx):
     await ctx.send('nmsl')
 
 
